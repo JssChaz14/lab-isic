@@ -1,0 +1,23 @@
+<div class="table-reposive p-3">
+    <table class="table table-striped">
+
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Div - Lab</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Hora</th>
+                <th>Tarea</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of item$ | async">
+                <th scope="row">{{item.name}}</th>
+                <td>{{item.laboratory}} - {{item.division}}</td>
+                <td>{{item.applicationDate | date}}</td>
+                <td>{{item.entryTime}} <small>a</small> {{item.departureTime}}</td>
+                <td>{{item.task}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

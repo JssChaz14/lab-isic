@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "laboratorio-isic": {
+      "hosting": {
+        "lab-isic": [
+          "laboratorio-isic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "laboratorio-isic"
+  }
+}

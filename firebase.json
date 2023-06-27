@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "lab-isic",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

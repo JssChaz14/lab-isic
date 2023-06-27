@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.cover-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-container .cover {
+    flex-grow: 1;
+    padding: 0 1.5rem;
+}
+
+.cover-container .masthead {
+    margin-bottom: 3rem;
+}
+
+.cover-container .inner {
+    padding: 2rem;
+}
+
+.cover-container .mastfoot {
+    margin-top: auto;
+    color: #999;
+}
