@@ -19,6 +19,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ResLaboratoryComponent } from './components/reserve/laboratory/res-laboratory/res-laboratory.component';
 import { ResLaboratoryAddComponent } from './components/reserve/laboratory/res-laboratory-add/res-laboratory-add.component';
+import { ResReportsComponent } from './components/reserve/laboratory/res-reports/res-reports.component';
 // import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ResLaboratoryAddComponent } from './components/reserve/laboratory/res-l
     FooterComponent,
     NavbarComponent,
     ResLaboratoryComponent,
-    ResLaboratoryAddComponent
+    ResLaboratoryAddComponent,
+    ResReportsComponent
   ],
   imports: [
     BrowserModule,
