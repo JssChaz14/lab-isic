@@ -1,8 +1,20 @@
 <section>
-    <h1>User Profiles</h1>
-    <ul>
-        <li *ngFor="let user of users$ | async">
-            {{user.name}}
-        </li>
-    </ul>
+    <h1>Estudiantes</h1>
+    <div class="row">
+        <div class="col-md-4 mb-5" *ngFor="let user of users$ | async">
+
+            <div class="card">
+                <div class="card-header">
+                    Alumno
+                </div>
+
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>{{user.title}}</p>
+                        <footer class="blockquote-footer">{{user.description}}</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

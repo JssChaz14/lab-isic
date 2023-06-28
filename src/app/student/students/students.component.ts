@@ -15,7 +15,7 @@ export class StudentsComponent {
 
     constructor() {
         // get a reference to the user-profile collection
-        const userProfileCollection = collection(this.firestore, 'items');
+        const userProfileCollection = collection(this.firestore, 'estudiantes');
 
         // get documents (data) from the collection using collectionData
         this.users$ = collectionData(userProfileCollection) as Observable<any[]>;
