@@ -7,6 +7,7 @@ import { StudentAddComponent } from './student/student-add/student-add.component
 import { ResLaboratoryAddComponent } from './components/reserve/laboratory/res-laboratory-add/res-laboratory-add.component';
 import { ResLaboratoryComponent } from './components/reserve/laboratory/res-laboratory/res-laboratory.component';
 import { ResReportsComponent } from './components/reserve/laboratory/res-reports/res-reports.component';
+import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 
 const routes: Routes = [
   { path: 'tutoriales', component: TutorialsComponent },
@@ -18,6 +19,9 @@ const routes: Routes = [
   { path: 'reservas', component: ResLaboratoryComponent },
   { path: 'reservar/laboratorio', component: ResLaboratoryAddComponent },
   { path: 'laboratorios/reportes', component: ResReportsComponent },
+  { path: 'a', component: ResReportsComponent },
+  { path: 'b', component: MyLineChartComponent },
+
 
 ];
 

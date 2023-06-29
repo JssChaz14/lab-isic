@@ -19,8 +19,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ResLaboratoryComponent } from './components/reserve/laboratory/res-laboratory/res-laboratory.component';
 import { ResLaboratoryAddComponent } from './components/reserve/laboratory/res-laboratory-add/res-laboratory-add.component';
-import { ResReportsComponent } from './components/reserve/laboratory/res-reports/res-reports.component';
 // import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+
+import { NgChartsModule } from 'ng2-charts';
+import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
+
+
 
 @NgModule({
   declarations: [
@@ -36,10 +40,11 @@ import { ResReportsComponent } from './components/reserve/laboratory/res-reports
     NavbarComponent,
     ResLaboratoryComponent,
     ResLaboratoryAddComponent,
-    ResReportsComponent
+    MyLineChartComponent,
   ],
   imports: [
     BrowserModule,
+    NgChartsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
@@ -48,7 +53,6 @@ import { ResReportsComponent } from './components/reserve/laboratory/res-reports
     provideFirestore(() => getFirestore())
   ],
   providers: [
-    // { provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],
   bootstrap: [AppComponent]
 })
